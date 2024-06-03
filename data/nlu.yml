@@ -90,11 +90,6 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: check_balances+transfer_money
-  examples: |
-    - How much money do I have? I want to transfer some to savings.
-    - What's the balance on my account? I need to transfer some so I want to know how much I have
-
 - intent: get_orders
   examples: |
     - Show me my orders
@@ -114,3 +109,11 @@ nlu:
     - Cancel order [123](order_id)
     - I want to cancel order [456](order_id)
     - Cancel my order [789](order_id)
+
+- intent: change_address
+  examples: |
+   - change address
+   - I want to change address
+   - Update address
+   - location change 
+   - delivery address change 

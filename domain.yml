@@ -11,6 +11,7 @@ intents:
   - get_orders
   - cancel_order
   - get_pics
+  - change_address
 
 responses:
   utter_greet:
@@ -32,6 +33,9 @@ responses:
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
+  utter_select_address:
+    - text: "Please select address from below"
+
 slots:
   token:
     type: text
@@ -42,14 +46,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
-
-
-  token:
-    type: text
-    mappings:
-      - type: from_text
-
 actions:
   - action_fetch_orders
   - action_set_user_token
   - action_cancel_order
+  - action_edit_order_address

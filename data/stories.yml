@@ -43,3 +43,8 @@ stories:
   steps:
   - intent: cancel_order
   - action: action_cancel_order
+
+- story: Change address
+  steps:
+  - intent: change_address
+  - action: utter_select_address
